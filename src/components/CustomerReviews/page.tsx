@@ -1,7 +1,7 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -56,9 +56,9 @@ export default function CustomerReviews() {
           loop={true}
           speed={800}
           breakpoints={{
-            480: { slidesPerView: 1 },  
-            768: { slidesPerView: 2 },  
-            1024: { slidesPerView: 3 }, 
+            480: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
           }}
           className="pb-10"
         >
@@ -83,7 +83,7 @@ export default function CustomerReviews() {
                     </div>
                   </div>
                 </div>
-                        <h3 className="text-lg font-semibold mt-2">{review.name}</h3>
+                <h3 className="text-lg font-semibold mt-2">{review.name}</h3>
                 <p className="text-gray-600 mt-3">{review.review}</p>
               </div>
             </SwiperSlide>
